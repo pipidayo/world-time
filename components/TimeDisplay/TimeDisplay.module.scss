@@ -1,0 +1,28 @@
+.root {
+  --text-secondary: #6b7280;
+}
+
+.dark {
+  .root {
+    --text-secondary: #9ca3af;
+  }
+}
+
+.timeDisplay {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+
+  .time {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: monospace;
+  }
+
+  .format {
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+}

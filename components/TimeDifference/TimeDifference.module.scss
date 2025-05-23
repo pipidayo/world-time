@@ -1,0 +1,39 @@
+.root {
+  --positive-bg: #fef3c7;
+  --positive-text: #d97706;
+  --negative-bg: #dbeafe;
+  --negative-text: #2563eb;
+}
+
+.dark {
+  .root {
+    --positive-bg: #78350f;
+    --positive-text: #fcd34d;
+    --negative-bg: #1e3a8a;
+    --negative-text: #60a5fa;
+  }
+}
+
+.timeDifference {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  gap: 0.5rem;
+
+  &.positive {
+    background-color: var(--positive-bg);
+    color: var(--positive-text);
+  }
+
+  &.negative {
+    background-color: var(--negative-bg);
+    color: var(--negative-text);
+  }
+
+  .arrow {
+    width: 20px;
+    height: 20px;
+  }
+}
